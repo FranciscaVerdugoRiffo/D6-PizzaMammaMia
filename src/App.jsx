@@ -9,10 +9,11 @@ import NotFoundPage from './views/NotFoundPage';
 import ProfilePage from './views/ProfilePage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { CartProvider } from './context/CartContext';  // Importación del CartProvider
 
 const App = () => {
   return (
-    <>
+    <CartProvider>  {/* Envuelve tu aplicación en el CartProvider */}
       <Navbar />
       <div className="container">
         <Routes>
@@ -27,10 +28,8 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
-    </>
+    </CartProvider>
   );
 };
 
 export default App;
-
-

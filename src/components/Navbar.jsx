@@ -6,7 +6,8 @@ const Navbar = () => {
   const { total } = useCart();
   const formattedTotal = total.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' });
 
-  const isAuthenticated = false; // Cambia esto a true si el usuario está logueado
+  // Simulación de autenticación (puedes cambiar esto por un estado real de autenticación)
+  const isAuthenticated = false; // Esto puede ser true si el usuario está logueado
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -57,3 +58,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

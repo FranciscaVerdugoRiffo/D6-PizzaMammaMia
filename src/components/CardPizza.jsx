@@ -30,3 +30,4 @@ const CardPizza = ({ id, name, price, ingredients, img }) => {
 export default CardPizza;
 
 
+

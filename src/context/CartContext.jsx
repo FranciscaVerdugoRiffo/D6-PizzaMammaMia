@@ -2,7 +2,7 @@ import React, { createContext, useState, useContext, useEffect } from "react";
 
 export const CartContext = createContext();
 
-const CartProvider = ({ children }) => {
+export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]); 
   const [total, setTotal] = useState(0);
 
@@ -49,7 +49,4 @@ const CartProvider = ({ children }) => {
 };
 
 export const useCart = () => useContext(CartContext);
-
-export default CartProvider;
-
 
