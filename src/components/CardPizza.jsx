@@ -18,9 +18,7 @@ const CardPizza = ({ id, name, price, ingredients, img }) => {
             ))}
           </ul>
           <button className="btn btn-dark mt-3" 
-            onClick={() => addToCart({ id, name, price, img, quantity: 1 })}>
-            🛒 Añadir al carrito
-          </button>
+            onClick={() => addToCart({ id, name, price, img, desc, quantity: 1 })}>🛒 Añadir al carrito </button>
         </div>
       </div>
     </div>

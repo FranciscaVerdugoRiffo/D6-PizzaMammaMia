@@ -19,7 +19,7 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // ❌ Eliminar productos del carrito
+  //  Eliminar productos del carrito
   const removeFromCart = (productId) => {
     setCart((prevCart) =>
       prevCart
@@ -32,10 +32,10 @@ export const CartProvider = ({ children }) => {
     );
   };
 
-  // 🔄 Vaciar carrito
+  // Vaciar carrito
   const clearCart = () => setCart([]);
 
-  // 💰 Calcular total automáticamente cuando el carrito cambia
+  //  Calcular total automáticamente cuando el carrito cambia
   useEffect(() => {
     const newTotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
     setTotal(newTotal);

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
-import { Link } from 'react-router-dom';
 
 const CartPage = () => {
   const { cart, addToCart, removeFromCart, clearCart, total } = useCart();
@@ -34,10 +33,7 @@ const CartPage = () => {
               </tbody>
             </table>
           ) : (
-            <div className="text-center">
-              <p>🛒 Tu carrito está vacío</p>
-              <Link to="/" className="btn btn-primary">Volver a la tienda</Link>
-            </div>
+            <p className="text-center">🛒 Tu carrito está vacío</p>
           )}
         </div>
       </div>
